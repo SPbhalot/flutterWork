@@ -1,0 +1,9 @@
+// Authentication for every Cutsomer
+// DOCS https://msuat.heytorus.com/cds/swagger/index.html
+
+GET https://torusms.jademoney.in/cds/api/_Auth/GenerateToken
+
+{
+    "userName":"er.siddharth.23@gmail.com",
+    "password":"Torus@1234"
+}

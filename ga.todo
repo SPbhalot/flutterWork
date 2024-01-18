@@ -1,0 +1,50 @@
+✔ Steps Change Animation @done (20/12/2023, 18:55:28)
+✔ Penny Drop State @done (20/12/2023, 10:34:54)
+✔ Logout @done (20/12/2023, 19:08:17)
+✔ Selfie State @done (20/12/2023, 21:02:41)
+✔ Nominees State @done (20/12/2023, 22:44:13)
+✔ Splash Slider @done (20/12/2023, 22:57:29)
+✔ KYC nidge @done (21/12/2023, 10:40:45)
+✔ Master Back Button @done (21/12/2023, 10:50:25)
+✔ Master Loading @done (21/12/2023, 13:20:25)
+
+
+
+
+// 5:30
+☐ Selfie API
+☐ Penny Drop API
+☐ Nominees API
+
+
+
+
+☐ Get User
+☐ KRA Redirect
+☐ Log in
+☐ Email Verify State
+✔ OB Back Button @done (10/01/2024, 22:47:44) - done via secure storage
+
+☐ Steps to Pages
+☐ Navigate Steps
+
+
+
+
+☐ Email Verify API
+☐ Protected Routes
+☐ Exchange Selection API
+☐ Exchange Selection State
+
+
+
+# To Nikant
+
+☐ Check is pan exists on PAN verififcation, if pan exists; throw errrow;
+☐ Update KYC status post DIGI Locker KYC
+☐ On Penny Drop => Name Match
+☐ PAN + DOB match post KYC
+
+
+# UI Gold
+☐ KYC Bagde to be fixed

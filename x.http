@@ -1,0 +1,20 @@
+###
+POST https://rsapi.reliancesmartmoney.com/SuperApp/Onboarding/OnboardingSteps/PanValidation/getDetail?panAdharSeeding
+Content-Type: application/json
+
+{
+    "TokenId": "RSE2364947",
+    "panNo": "AAAPC6666C"
+}
+
+
+
+# Below are your API Credentials for sandbox
+
+# Client Id : AI8UVZ2U9DP8X7M5LMRFRZ8N2UBQXW7I
+# Client Secret : 628PPJ7LPBEN1ZVUGYZOLMCYLFSJOVGD
+/*
+
+
+
+*/

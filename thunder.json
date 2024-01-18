@@ -1,0 +1,279 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "User service",
+    "dateExported": "2023-11-29T11:01:22.834Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c42afccd-0852-4994-95b5-8e2fdf4990f8",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2023-11-23T07:01:48.332Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "51f37091-e0a0-4bbe-8394-b1fe0b9a849a",
+            "name": "Routes",
+            "containerId": "",
+            "created": "2023-11-25T08:05:44.910Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "0bc32210-69cd-4b80-befd-7b7a096a2410",
+            "name": "Users",
+            "containerId": "",
+            "created": "2023-11-26T09:07:24.693Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "52a4af0d-8b16-400b-88be-cad0d3afa057",
+            "name": "pan utils",
+            "containerId": "",
+            "created": "2023-11-27T05:23:13.452Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "95baf749-1254-4fd4-aa9a-4c076f7708ed",
+            "name": "onboarding",
+            "containerId": "",
+            "created": "2023-11-28T08:27:53.556Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "35091720-5598-4b22-bf77-dfd65bb9fe32",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "c42afccd-0852-4994-95b5-8e2fdf4990f8",
+            "name": "Send Verification",
+            "url": "/api/auth?type=phone",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-11-23T07:01:58.191Z",
+            "modified": "2023-11-29T09:28:51.347Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "type",
+                    "value": "phone",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"entity\":\"+917711882931\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a6732134-4e77-4c9c-981c-63c7ad13307c",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "c42afccd-0852-4994-95b5-8e2fdf4990f8",
+            "name": "Verification",
+            "url": "/api/auth/verify?type=phone&jwt=true",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-24T15:56:42.100Z",
+            "modified": "2023-11-29T09:28:57.528Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "type",
+                    "value": "phone",
+                    "isPath": false
+                },
+                {
+                    "name": "jwt",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"id\": 26,\r\n  \"created_at\": \"2023-11-29T14:58:51.2961751+05:30\",\r\n  \"deleted_at\": null,\r\n  \"updated_at\": \"2023-11-29T14:58:51.2961751+05:30\",\r\n  \"entity\": \"+917711882931\",\r\n  \"otp\": \"257529\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f20226e2-f3ee-4657-97dd-766b17c47d11",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "51f37091-e0a0-4bbe-8394-b1fe0b9a849a",
+            "name": "Get routes",
+            "url": "/admin/routes/3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-25T08:05:51.561Z",
+            "modified": "2023-11-25T11:29:23.316Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "50b9d3d3-63a5-406f-bb1f-cbfc41240dc9",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "51f37091-e0a0-4bbe-8394-b1fe0b9a849a",
+            "name": "Create Routes",
+            "url": "/admin/routes",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-25T08:10:04.500Z",
+            "modified": "2023-11-25T08:16:42.367Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"routes\":[\n{    \"path\":\"/api/auth\",\n    \"name\":\"sendVerification\"}\n    ]\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "847ccaf6-2bd0-4c4e-b515-e181b6e1be00",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "51f37091-e0a0-4bbe-8394-b1fe0b9a849a",
+            "name": "Delete Route",
+            "url": "",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-11-25T09:52:25.510Z",
+            "modified": "2023-11-25T09:52:25.510Z",
+            "headers": []
+        },
+        {
+            "_id": "0e61ed8e-6b00-4aa2-91f9-b5dcbf470990",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "0bc32210-69cd-4b80-befd-7b7a096a2410",
+            "name": "Get user",
+            "url": "/api/users/me",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-11-26T09:07:30.622Z",
+            "modified": "2023-11-27T04:30:41.317Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEifQ.4B0qFYEP6Oks9hGoiimGxar2S95AMGvDOzR_4fCShmg"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c50e13c-c78d-42aa-86bb-94a92309e82d",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "52a4af0d-8b16-400b-88be-cad0d3afa057",
+            "name": "Validate pan",
+            "url": "/api/users/onboarding/pancheck",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-11-27T05:23:27.418Z",
+            "modified": "2023-11-29T08:43:00.934Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEifQ.4B0qFYEP6Oks9hGoiimGxar2S95AMGvDOzR_4fCShmg"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pan\":\"DHPPK7300Q\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ef5194a1-80f3-4767-b76e-266fa76d474c",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "95baf749-1254-4fd4-aa9a-4c076f7708ed",
+            "name": "upload wet sign",
+            "url": "/api/users/onboarding/upload-wetsign",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-11-28T08:28:00.978Z",
+            "modified": "2023-11-29T10:17:53.379Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEifQ.4B0qFYEP6Oks9hGoiimGxar2S95AMGvDOzR_4fCShmg"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQifQ.HWwAT5t8JseqzEuSUos9FiQrDWu9W8E39j5bOY6pm_4",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"base64Wet\" : \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAADMElEQVR4nOzVwQnAIBQFQYXff81RUkQCOyDj1YOPnbXWPmeTRef+/3O/OyBjzh3CD95BfqICMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMK0CMO0TAAD//2Anhf4QtqobAAAAAElFTkSuQmCC\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c457a99d-eee1-4c2e-be4f-3e64bec49099",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "95baf749-1254-4fd4-aa9a-4c076f7708ed",
+            "name": "Create onboarding",
+            "url": "/api/users/onboarding",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-11-28T13:08:17.368Z",
+            "modified": "2023-11-28T13:36:13.277Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEifQ.4B0qFYEP6Oks9hGoiimGxar2S95AMGvDOzR_4fCShmg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"dob\":\"01/01/1999\",\n \"pan\":\"AAAAA1111D\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f07017d5-39eb-42ee-9b9a-86ef906a75a0",
+            "colId": "d7e18456-6511-46a4-a5e9-91f4ce8701b6",
+            "containerId": "95baf749-1254-4fd4-aa9a-4c076f7708ed",
+            "name": "Update onboarding",
+            "url": "/api/users/onboarding/1",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-11-28T14:01:14.929Z",
+            "modified": "2023-11-29T10:59:46.180Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEifQ.4B0qFYEP6Oks9hGoiimGxar2S95AMGvDOzR_4fCShmg"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQifQ.HWwAT5t8JseqzEuSUos9FiQrDWu9W8E39j5bOY6pm_4",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fathers_full_name\":\"name middle lastname\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://127.0.0.1:1337"
+        }
+    }
+}

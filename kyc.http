@@ -1,0 +1,134 @@
+### Penny-Drop Hyperverge
+POST https://ind-verify.hyperverge.co/api/checkBankAccount
+Content-Type:application/json
+transactionId:ga_12390
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "accountNumber":"6612217140",
+    "ifsc":"KKBK0000629"
+}
+
+### DigiLocker KYC Start
+POST https://ind-verify.hyperverge.co/api/digilocker/start
+Content-Type:application/json
+transactionId:ga_1234
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "referenceId":"ga_1678"
+}
+
+### UPI Verification
+POST  https://ind-lookup.hyperverge.co/api/lookup/UPIVerification
+Content-Type:application/json
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "UPIId":"cluster1@paytm"
+}
+
+
+
+### Fetch E-Aadhar API
+POST https://ind-verify.hyperverge.co/api/digilocker/eAadhaarDetails
+Content-Type:application/json
+transactionId:ga_1234
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "referenceId":"ga_1678",
+    "aadhaarFile":"yes"
+}
+
+
+
+### Fetch E-Aadhar PAN
+POST https://ind-verify.hyperverge.co/api/digilocker/docDetails
+Content-Type:application/json
+transactionId:ga_1234
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "referenceId":"ga_1678",
+    "pan":"yes"
+}
+
+### Pan Auto Fetch
+POST https://ind.thomas.hyperverge.co/v1/fetchPANDetailed
+Content-Type:application/json
+transactionId:ga_1234
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "pan":"DHPPK7300Q",
+    "standardiseResponse":true
+}
+
+### Mobile Aadar Check
+POST https://ind-verify.hyperverge.co/api/digilocker/accountStatus
+Content-Type:application/json
+transactionId:ga_1234
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+  "mobile": "9096598887",
+  "aadhaar": "435526270257"
+}
+
+
+### Fetch PAN - Digitlocker
+POST https://ind-verify.hyperverge.co/api/digilocker/docDetails
+Content-Type:application/json
+transactionId:ga_1234
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "referenceId" : "ga_12347",
+    "pan" : "yes",
+    "dl" : "no",
+    "panFile": "yes",
+    "dlFile": "no"
+}
+
+
+### E-Sign
+POST https://ind-thomas.hyperverge.co/v1/aadhaarOTPeSign
+Content-Type:application/json
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+
+{
+    "transactionId":"ga_1234",
+    "inviteeName":"Siddhesh",
+    "inviteeEmail":"siddhesh@greyaxis.io",
+
+}
+
+### Text Match
+POST https://ind-verify.hyperverge.co/api/matchFields
+Content-Type:application/json
+appId:9hntlc
+appKey:bpxnoji3kz3933pwlik2
+transactionId:ga_1234
+
+{
+    "name": {
+        "value1": "S K",
+        "value2": "SIDDHESH KHELYA",
+        "preferences": {
+            "phonetic": "yes",
+            "removeSuffix": "yes",
+            "editDistance": 1,
+            "returnScore": "yes"
+        }
+    }
+}
